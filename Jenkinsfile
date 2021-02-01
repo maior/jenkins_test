@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'python --version'
+                sh 'python app.py'
             }
         }
         stage('Test') {
             steps {
-                sh 'python --version'
+                sh 'python app.py'
             }
         }
         stage('Deploy') {
